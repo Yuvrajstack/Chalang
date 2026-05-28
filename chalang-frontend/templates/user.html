@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YARD Opportunities</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='user.css') }}">
+</head>
+<body>
+
+    <!-- Background Effects -->
+    <div class="bg-glow"></div>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🚀 YARD
+        </div>
+
+        <div class="nav-links">
+            <a href="/yard">Home</a>
+            <a href="/exam">Exams</a>
+            <a href="/user">Opportunities</a>
+            <a href="/resources">Resources</a>
+        </div>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <header class="hero">
+
+        <h1>🚀 YARD - Opportunities</h1>
+
+        <p>
+            Discover internships, scholarships, hackathons,
+            competitions and career opportunities for students.
+        </p>
+
+    </header>
+
+    <!-- ================= SEARCH + FILTER ================= -->
+    <section class="controls-section">
+
+        <div class="controls">
+
+            <input 
+                type="text"
+                id="search"
+                placeholder="🔍 Search opportunities..."
+            />
+
+            <select id="filter">
+                <option value="all">All Categories</option>
+                <option value="Internship">Internship</option>
+                <option value="Scholarship">Scholarship</option>
+                <option value="Hackathon">Hackathon</option>
+            </select>
+
+        </div>
+
+    </section>
+
+    <!-- ================= OPPORTUNITIES ================= -->
+    <main>
+
+        <div id="opportunityList" class="opportunity-list"></div>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <p>
+            © 2026 SkillBridge | Empowering Students Through Opportunities
+        </p>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='user.js') }}"></script>
+
+</body>
+</html>
+<!-- 
+9. Title: Coursera Free Learning Programs
+Category: Course
+Link: https://www.coursera.org
+
+Description: Free and paid courses from top universities in programming, data science, and business.
+
+10. Title: NASA Space Apps Challenge
+Category: Hackathon
+Link: https://spaceappschallenge.org
+
+Description: Global hackathon solving real-world space and Earth problems using NASA data.-->

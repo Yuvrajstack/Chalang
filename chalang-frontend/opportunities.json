@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Google Summer of Code 2026",
+        "category": "Internship",
+        "link": "https://summerofcode.withgoogle.com",
+        "description": "Work with global open-source organizations on real-world projects and get paid while contributing to impactful software."
+    },
+    {
+        "title": "Microsoft Learn Student Ambassadors",
+        "category": "Fellowship / Community",
+        "link": "https://studentambassadors.microsoft.com/",
+        "description": "Join a global student program to build technical skills, organize events, and collaborate with Microsoft."
+    },
+    {
+        "title": "Amazon Future Engineer Internship",
+        "category": "Internship",
+        "link": "https://www.amazonfutureengineer.com/",
+        "description": "Internship opportunity for students interested in software development and real-world industry experience."
+    },
+    {
+        "title": "Meta Hacker Cup",
+        "category": "Competition / Coding",
+        "link": "https://www.facebook.com/codingcompetitions/hacker-cup",
+        "description": "Competitive programming contest by Meta with exciting prizes and global recognition."
+    },
+    {
+        "title": "Coursera Free Certifications",
+        "category": "Course / Certification",
+        "link": "https://www.coursera.org/",
+        "description": "Access free online courses from top universities and earn certificates in tech, business, and more."
+    },
+    {
+        "title": "TCS CodeVita",
+        "category": "Coding Contest",
+        "link": "https://www.tcscodevita.com/",
+        "description": "One of the largest global coding competitions with opportunities for recruitment at TCS."
+    },
+    {
+        "title": "Internshala Student Trainings",
+        "category": "Training / Internship",
+        "link": "https://trainings.internshala.com/",
+        "description": "Learn in-demand skills like web development, data science, and AI with certification."
+    },
+    {
+        "title": "Smart India Hackathon",
+        "category": "Hackathon",
+        "link": "https://www.sih.gov.in/",
+        "description": "National-level hackathon where students solve real-world government and industry problems."
+    },
+    {
+        "title": "GitHub Campus Experts",
+        "category": "Community / Leadership",
+        "link": "https://education.github.com/experts",
+        "description": "Build leadership skills, grow your tech community, and collaborate with GitHub."
+    },
+    {
+        "title": "Udemy Free Courses",
+        "category": "Course",
+        "link": "https://www.udemy.com/",
+        "description": "Explore free and discounted courses on programming, design, business, and personal development."
+    },
+    {
+        "title": "Hack-O-Holic 4.0 - 24 Hour Hackathon \ud83d\udcbb\ud83d\udd25",
+        "category": "Hackathon",
+        "link": "https://hackoholic4.live",
+        "description": "\u23f3 Time is running out gather your team, bring your ideas, and get ready to build something amazing!"
+    },
+    {
+        "title": "NASA Space Apps Challenge",
+        "category": "Hackathon",
+        "link": "https://spaceappschallenge.org",
+        "description": "Global hackathon solving real-world space and Earth problems using NASA data."
+    },
+    {
+        "title": "Coursera Free Learning Programs",
+        "category": "Course",
+        "link": "https://www.coursera.org",
+        "description": "Free and paid courses from top universities in programming, data science, and business."
+    }
+]

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YARD Resources Hub</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='resources.css') }}">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>YARD</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="/yard">Home</a></li>
+            <li><a href="/user">Opportunities</a></li>
+            <li><a href="/exam">Exams</a></li>
+            <li><a href="/resources">Resources</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Explore Learning Resources
+            </h1>
+
+            <p>
+                Discover curated notes, PDFs, roadmaps,
+                coding sheets, interview prep material,
+                development resources, and much more.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-btn">
+                    Start Learning
+                </button>
+
+                <button class="secondary-btn">
+                    Explore Categories
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Glow Effect -->
+        <div class="hero-glow"></div>
+
+    </section>
+
+    <!-- =========================
+         SEARCH + FILTER
+    ========================== -->
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <input type="text"
+            id="search"
+            placeholder="Search resources...">
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+        <div class="filter-buttons">
+
+            <button class="filter-btn active">
+                All
+            </button>
+
+            <button class="filter-btn">
+                Programming
+            </button>
+
+            <button class="filter-btn">
+                Web Dev
+            </button>
+
+            <button class="filter-btn">
+                DSA
+            </button>
+
+            <button class="filter-btn">
+                AI/ML
+            </button>
+
+            <button class="filter-btn">
+                Interview Prep
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         STATS SECTION
+    ========================== -->
+    <section class="stats-section">
+
+        <div class="stat-card">
+            <h2>500+</h2>
+            <p>Resources</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>50+</h2>
+            <p>Categories</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>10K+</h2>
+            <p>Students</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>24/7</h2>
+            <p>Access</p>
+        </div>
+
+    </section>
+
+    <!-- =========================
+         FEATURED RESOURCES
+    ========================== -->
+    <section class="featured-section">
+
+        <div class="section-title">
+            <h2>Featured Resources</h2>
+            <p>Handpicked high quality learning material</p>
+        </div>
+
+        <div class="featured-grid">
+
+            <div class="featured-card">
+
+                <div class="tag">
+                    TRENDING
+                </div>
+
+                <h3>Complete Web Development</h3>
+
+                <p>
+                    Learn HTML, CSS, JavaScript,
+                    React, Flask and backend development.
+                </p>
+
+                <button>
+                    View Resource
+                </button>
+
+            </div>
+
+            <div class="featured-card">
+
+                <div class="tag">
+                    POPULAR
+                </div>
+
+                <h3>DSA Master Sheet</h3>
+
+                <p>
+                    Top coding interview problems with
+                    structured learning roadmap.
+                </p>
+
+                <button>
+                    View Resource
+                </button>
+
+            </div>
+
+            <div class="featured-card">
+
+                <div class="tag">
+                    NEW
+                </div>
+
+                <h3>AI & Machine Learning</h3>
+
+                <p>
+                    Beginner to advanced ML notes,
+                    projects and practical guides.
+                </p>
+
+                <button>
+                    View Resource
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         MAIN RESOURCE CONTAINER
+    ========================== -->
+    <section class="resources-section">
+
+        <div class="section-title">
+            <h2>All Resources</h2>
+            <p>Browse the complete collection</p>
+        </div>
+
+        <section class="resources-container"
+        id="resourcesContainer">
+
+            <!-- Dynamic cards from JS -->
+
+        </section>
+
+    </section>
+
+    <!-- =========================
+         TIMELINE / ROADMAP
+    ========================== -->
+    <section class="roadmap-section">
+
+        <div class="section-title">
+            <h2>Learning Roadmap</h2>
+            <p>Recommended growth journey</p>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <span>01</span>
+                <h3>Learn Basics</h3>
+                <p>Understand fundamentals and concepts.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>02</span>
+                <h3>Practice Projects</h3>
+                <p>Build projects and gain hands-on experience.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>03</span>
+                <h3>Advanced Learning</h3>
+                <p>Move towards advanced frameworks and tools.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>04</span>
+                <h3>Get Opportunities</h3>
+                <p>Apply for internships and jobs confidently.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         NEWSLETTER
+    ========================== -->
+    <section class="newsletter">
+
+        <h2>Stay Updated</h2>
+
+        <p>
+            Get latest learning resources and opportunities
+            directly in your inbox.
+        </p>
+
+        <div class="newsletter-box">
+
+            <input type="email"
+            placeholder="Enter your email">
+
+            <button>
+                Subscribe
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                <h2>YARD</h2>
+                <p>
+                    Youth Academic & Resource Directory
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <div>
+                    <h3>Platform</h3>
+                    <a href="/yard">Home</a>
+                    <a href="/resources">Resources</a>
+                    <a href="/opportunity">Opportunities</a>
+                </div>
+
+                <div>
+                    <h3>Support</h3>
+                    <a href="#">Help Center</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 YARD Platform. All Rights Reserved.
+            </p>
+        </div>
+
+    </footer>
+
+    <!-- =========================
+         JS
+    ========================== -->
+    <script src="{{ url_for('static', filename='resources.js') }}"></script>
+
+</body>
+</html>

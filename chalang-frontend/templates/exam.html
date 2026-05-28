@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YARD Exams Portal</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='exam.css') }}">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <h1>YARD Exams Portal</h1>
+        <p>Explore Competitive Exams, Scholarships & Career Paths</p>
+    </header>
+
+    <!-- NAVBAR -->
+
+    <nav>
+        <a href="/yard">Home</a>
+        <a href="/exam">Exams</a>
+        <a href="/user">Opportunities</a>
+        <a href="/resources">Resources</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="content">
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+            <h2>Your Gateway To Academic Success</h2>
+
+            <p>
+                Discover verified information about engineering,
+                medical, government, banking, and professional exams.
+                Get eligibility details, preparation guidance, and
+                important resources in one place.
+            </p>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search Exams...">
+                <button>Search</button>
+            </div>
+        </section>
+
+        <!-- EXAM CATEGORIES -->
+
+        <h2 class="section-title">Exam Categories</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Engineering Exams</h3>
+                <p>
+                    JEE Main, JEE Advanced, MHT-CET,
+                    BITSAT, GATE and more.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Medical Exams</h3>
+                <p>
+                    NEET, AIIMS, nursing entrance,
+                    pharmacy exams and more.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Government Exams</h3>
+                <p>
+                    UPSC, SSC, Railway, Police,
+                    Defense and civil services.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Banking Exams</h3>
+                <p>
+                    IBPS, SBI PO, RBI Assistant,
+                    Clerk and finance exams.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- POPULAR EXAMS -->
+
+        <h2 class="section-title">Popular Exams</h2>
+
+        <div class="exam-container">
+
+            {% for exam in exams %}
+
+            <div class="exam-card" data-name="{{ exam.name }}">
+
+                <h3>{{ exam.name }}</h3>
+
+                <p>{{ exam.description }}</p>
+
+                <ul>
+                    <li>Eligibility: {{ exam.eligibility }}</li>
+                    <li>Mode: {{ exam.mode }}</li>
+                    <li>Level: {{ exam.level }}</li>
+                    <li>Date: {{ exam.application_date }}</li>
+                </ul>
+
+                <a href="{{ exam.official_link }}" target="_blank">
+                    <button>Official Website</button>
+                </a>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+        <!-- PREPARATION SECTION -->
+
+        <h2 class="section-title">Preparation Resources</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Study Notes</h3>
+                <p>
+                    Access organized study material,
+                    revision notes and PDFs.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Mock Tests</h3>
+                <p>
+                    Practice through mock tests and
+                    improve exam performance.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Previous Papers</h3>
+                <p>
+                    Download previous year question papers
+                    and understand exam patterns.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Video Lectures</h3>
+                <p>
+                    Learn through curated educational
+                    videos and tutorials.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- CAREER GUIDANCE -->
+
+        <h2 class="section-title">Career Guidance</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>1. Choose Your Stream</h3>
+                <p>
+                    Identify your interests and select
+                    a suitable academic field.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2. Select Exam Path</h3>
+                <p>
+                    Explore entrance exams according
+                    to your career goals.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>3. Prepare Strategically</h3>
+                <p>
+                    Follow proper study plans and
+                    practice consistently.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>4. Achieve Your Goal</h3>
+                <p>
+                    Secure admissions, scholarships,
+                    internships and future opportunities.
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>© 2026 YARD Exams Portal</p>
+    </footer>
+
+</body>
+<script src="{{ url_for('static', filename='exam.js') }}"></script>
+</html>

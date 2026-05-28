@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YARD Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='opportunity.css') }}">
+    <style>
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .tab-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #b0b3c7;
+            padding: 12px 24px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        .tab-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+        .active-tab {
+            background: linear-gradient(135deg, #6c63ff, #00c6ff);
+            color: white;
+            border: none;
+            box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
+        }
+        .admin-panel {
+            display: none;
+        }
+        .active-panel {
+            display: block;
+        }
+        .card-meta-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        .card-company {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #00d4ff;
+        }
+        .card-extra-details {
+            font-size: 0.82rem;
+            color: #b0b3c7;
+            margin-bottom: 15px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .card-extra-details p {
+            margin-bottom: 5px;
+        }
+        .card-extra-details strong {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>YARD Admin Dashboard</h1>
+        <p>Manage opportunities, competitive exams, and resources</p>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <div class="tab-container">
+        <button class="tab-btn active-tab" onclick="switchTab('opportunities')" id="tab-opp">Manage Opportunities</button>
+        <button class="tab-btn" onclick="switchTab('exams')" id="tab-exam">Manage Exams</button>
+        <button class="tab-btn" onclick="switchTab('resources')" id="tab-res">Manage Resources</button>
+    </div>
+
+    <!-- ==============================================
+         OPPORTUNITIES PANEL
+    ============================================== -->
+    <div id="panel-opportunities" class="admin-panel active-panel">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search opportunities..." />
+            <select id="filterCategory">
+                <option value="">All Categories</option>
+                <option value="Internship">Internship</option>
+                <option value="Scholarship">Scholarship</option>
+                <option value="Competition">Competition</option>
+                <option value="Workshop">Workshop</option>
+            </select>
+        </div>
+
+        <!-- Add Opportunity Form -->
+        <div class="form-container">
+            <h2>Add Opportunity</h2>
+
+            <label>Title</label>
+            <input type="text" id="title" placeholder="Enter title" />
+
+            <label>Company</label>
+            <input type="text" id="company" placeholder="Enter company name" />
+
+            <label>Category</label>
+            <input type="text" id="category" placeholder="Enter category (e.g. Internship, Scholarship)" />
+
+            <label>Link</label>
+            <input type="text" id="link" placeholder="Enter application link" />
+
+            <label>Deadline</label>
+            <input type="text" id="deadline" placeholder="Enter deadline (e.g. 15th June 2026)" />
+
+            <label>Eligibility</label>
+            <input type="text" id="eligibility" placeholder="Enter eligibility criteria" />
+
+            <label>Posted By</label>
+            <input type="text" id="postedBy" placeholder="Enter your name" />
+
+            <label>Description</label>
+            <textarea id="description" placeholder="Enter description"></textarea>
+
+            <button onclick="addOpportunity()">Add Opportunity</button>
+        </div>
+
+        <!-- Opportunities List -->
+        <div class="list-container">
+            <h2>Available Opportunities</h2>
+            <div id="opportunityList" class="cards-container">
+                <!-- Cards added dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ==============================================
+         EXAMS PANEL
+    ============================================== -->
+    <div id="panel-exams" class="admin-panel">
+        <!-- Add Exam Form -->
+        <div class="form-container">
+            <h2>Add Competitive Exam</h2>
+
+            <label>Exam Name</label>
+            <input type="text" id="examName" placeholder="e.g. JEE Main, UPSC Civil Services" />
+
+            <label>Level</label>
+            <input type="text" id="examLevel" placeholder="e.g. National, State, International" />
+
+            <label>Mode</label>
+            <input type="text" id="examMode" placeholder="e.g. Online (CBT), Offline (Pen & Paper)" />
+
+            <label>Application Date</label>
+            <input type="text" id="examDate" placeholder="e.g. Oct 2026 - Nov 2026" />
+
+            <label>Eligibility</label>
+            <input type="text" id="examEligibility" placeholder="Enter eligibility criteria" />
+
+            <label>Official Link</label>
+            <input type="text" id="examLink" placeholder="Enter official website link" />
+
+            <label>Description</label>
+            <textarea id="examDescription" placeholder="Enter short exam description"></textarea>
+
+            <button onclick="addExam()">Add Exam</button>
+        </div>
+
+        <div class="list-container">
+            <h2>Available Exams</h2>
+            <div id="examList" class="cards-container">
+                <!-- Cards added dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ==============================================
+         RESOURCES PANEL
+    ============================================== -->
+    <div id="panel-resources" class="admin-panel">
+        <!-- Add Resource Form -->
+        <div class="form-container">
+            <h2>Add Educational Resource</h2>
+
+            <label>Resource Title</label>
+            <input type="text" id="resourceTitle" placeholder="e.g. Complete DSA Cheat Sheet" />
+
+            <label>Category</label>
+            <input type="text" id="resourceCategory" placeholder="e.g. E-Book, Cheat Sheet, Video Course" />
+
+            <label>Link</label>
+            <input type="text" id="resourceLink" placeholder="Enter resource link" />
+
+            <label>Description</label>
+            <textarea id="resourceDescription" placeholder="Enter short description"></textarea>
+
+            <button onclick="addResource()">Add Resource</button>
+        </div>
+
+        <div class="list-container">
+            <h2>Available Resources</h2>
+            <div id="resourceList" class="cards-container">
+                <!-- Cards added dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ==============================================
+         TEMPLATES
+    ============================================== -->
+
+    <!-- Template Opportunity Card -->
+    <template id="cardTemplate">
+        <div class="card">
+            <h3 class="card-title"></h3>
+            <div class="card-meta-row">
+                <span class="card-company"></span>
+                <span class="card-category"></span>
+            </div>
+            <p class="card-description"></p>
+            <div class="card-extra-details">
+                <p><strong>Eligibility:</strong> <span class="card-eligibility"></span></p>
+                <p><strong>Deadline:</strong> <span class="card-deadline"></span></p>
+                <p><strong>Posted By:</strong> <span class="card-postedby"></span></p>
+            </div>
+            <a class="card-link" target="_blank">Apply Now</a>
+
+            <div class="card-actions">
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </div>
+    </template>
+
+    <!-- Template Exam Card -->
+    <template id="examCardTemplate">
+        <div class="card">
+            <h3 class="card-title"></h3>
+            <div class="card-extra-details" style="border: none; padding-top: 0; margin-top: 0;">
+                <p><strong>Level:</strong> <span class="card-level"></span></p>
+                <p><strong>Mode:</strong> <span class="card-mode"></span></p>
+                <p><strong>Application Date:</strong> <span class="card-date"></span></p>
+                <p><strong>Eligibility:</strong> <span class="card-eligibility"></span></p>
+            </div>
+            <p class="card-description"></p>
+            <a class="card-link" target="_blank">Official Website</a>
+
+            <div class="card-actions" style="margin-top: 15px;">
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </div>
+    </template>
+
+    <!-- Template Resource Card -->
+    <template id="resourceCardTemplate">
+        <div class="card">
+            <h3 class="card-title"></h3>
+            <div class="card-meta-row">
+                <span class="card-category"></span>
+            </div>
+            <p class="card-description"></p>
+            <a class="card-link" target="_blank">Open Resource</a>
+
+            <div class="card-actions" style="margin-top: 15px;">
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </div>
+    </template>
+
+    <script src="{{ url_for('static', filename='opportunity.js') }}"></script>
+</body>
+</html>

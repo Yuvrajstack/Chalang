@@ -1,0 +1,131 @@
+[
+    {
+        "id": 1,
+        "name": "JEE Main",
+        "category": "Engineering",
+        "description": "National engineering entrance exam for NITs and IIITs.",
+        "eligibility": "12th PCM",
+        "mode": "Online",
+        "level": "National",
+        "application_date": "January 2026",
+        "official_link": "https://jeemain.nta.nic.in",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+    },
+
+    {
+        "id": 2,
+        "name": "NEET UG",
+        "category": "Medical",
+        "description": "Medical entrance examination for MBBS, BDS and allied courses.",
+        "eligibility": "12th PCB",
+        "mode": "Offline",
+        "level": "National",
+        "application_date": "February 2026",
+        "official_link": "https://neet.nta.nic.in",
+        "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
+    },
+
+    {
+        "id": 3,
+        "name": "UPSC Civil Services",
+        "category": "Government",
+        "description": "Prestigious civil services examination for IAS, IPS and IFS.",
+        "eligibility": "Graduation",
+        "mode": "Offline",
+        "level": "National",
+        "application_date": "March 2026",
+        "official_link": "https://upsc.gov.in",
+        "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop"
+    },
+
+    {
+        "id": 4,
+        "name": "GATE",
+        "category": "Engineering",
+        "description": "Graduate Aptitude Test in Engineering for M.Tech and PSU jobs.",
+        "eligibility": "Engineering Degree",
+        "mode": "Online",
+        "level": "National",
+        "application_date": "August 2026",
+        "official_link": "https://gate2026.iitr.ac.in",
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+    },
+
+    {
+        "id": 5,
+        "name": "SSC CGL",
+        "category": "Government",
+        "description": "Combined Graduate Level exam for central government recruitment.",
+        "eligibility": "Graduation",
+        "mode": "Online",
+        "level": "National",
+        "application_date": "June 2026",
+        "official_link": "https://ssc.nic.in",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop"
+    },
+
+    {
+        "id": 6,
+        "name": "IBPS PO",
+        "category": "Banking",
+        "description": "Bank Probationary Officer recruitment examination.",
+        "eligibility": "Graduation",
+        "mode": "Online",
+        "level": "National",
+        "application_date": "July 2026",
+        "official_link": "https://ibps.in",
+        "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop"
+    },
+
+    {
+        "id": 7,
+        "name": "CAT",
+        "category": "Management",
+        "description": "Common Admission Test for IIMs and MBA colleges.",
+        "eligibility": "Graduation",
+        "mode": "Online",
+        "level": "National",
+        "application_date": "August 2026",
+        "official_link": "https://iimcat.ac.in",
+        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+    },
+
+    {
+        "id": 8,
+        "name": "CUET UG",
+        "category": "University Entrance",
+        "description": "Common University Entrance Test for undergraduate admissions.",
+        "eligibility": "12th Pass",
+        "mode": "Online",
+        "level": "National",
+        "application_date": "March 2026",
+        "official_link": "https://cuet.samarth.ac.in",
+        "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop"
+    },
+
+    {
+        "id": 9,
+        "name": "NDA",
+        "category": "Defence",
+        "description": "National Defence Academy entrance examination.",
+        "eligibility": "12th Pass",
+        "mode": "Offline",
+        "level": "National",
+        "application_date": "December 2025",
+        "official_link": "https://upsc.gov.in",
+        "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1200&auto=format&fit=crop"
+    },
+
+    {
+        "id": 10,
+        "name": "CLAT",
+        "category": "Law",
+        "description": "National level law entrance exam for NLUs.",
+        "eligibility": "12th Pass",
+        "mode": "Offline",
+        "level": "National",
+        "application_date": "October 2025",
+        "official_link": "https://consortiumofnlus.ac.in",
+        "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200&auto=format&fit=crop"
+    }
+]

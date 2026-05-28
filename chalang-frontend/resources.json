@@ -1,0 +1,161 @@
+[
+  {
+    "id": 1,
+    "title": "C++ Complete Notes",
+    "category": "Programming",
+    "type": "PDF",
+    "level": "Beginner to Advanced",
+    "author": "YARD Academy",
+    "duration": "12 Hours",
+    "rating": 4.8,
+    "students": "12K+",
+    "description": "Comprehensive C++ notes covering basics, OOP, STL, DSA concepts, pointers, file handling, and advanced programming topics.",
+    "tags": ["C++", "OOP", "STL", "DSA"],
+    "link": "https://www.learncpp.com/",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop"
+  },
+
+  {
+    "id": 2,
+    "title": "Web Development Roadmap",
+    "category": "Web Development",
+    "type": "Roadmap",
+    "level": "Beginner",
+    "author": "roadmap.sh",
+    "duration": "6 Months",
+    "rating": 4.9,
+    "students": "25K+",
+    "description": "Complete frontend and backend roadmap including HTML, CSS, JavaScript, React, Node.js, Flask, databases, deployment, and projects.",
+    "tags": ["HTML", "CSS", "JavaScript", "React"],
+    "link": "https://roadmap.sh/full-stack",
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop"
+  },
+
+  {
+    "id": 3,
+    "title": "Python for Beginners",
+    "category": "Programming",
+    "type": "Course",
+    "level": "Beginner",
+    "author": "YARD Learning",
+    "duration": "18 Hours",
+    "rating": 4.7,
+    "students": "18K+",
+    "description": "Learn Python programming from scratch including variables, loops, functions, OOP, modules, APIs, and projects.",
+    "tags": ["Python", "Automation", "Backend"],
+    "link": "https://www.python.org/about/gettingstarted/",
+    "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=1200&auto=format&fit=crop"
+  },
+
+  {
+    "id": 4,
+    "title": "Data Structures & Algorithms Sheet",
+    "category": "DSA",
+    "type": "Practice Sheet",
+    "level": "Intermediate",
+    "author": "YARD Competitive Hub",
+    "duration": "45 Days",
+    "rating": 4.9,
+    "students": "30K+",
+    "description": "Top coding interview problems covering arrays, linked lists, trees, graphs, DP, recursion, and advanced DSA patterns.",
+    "tags": ["DSA", "Leetcode", "Coding"],
+    "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+  },
+
+  {
+    "id": 5,
+    "title": "Machine Learning Crash Course",
+    "category": "AI/ML",
+    "type": "Course",
+    "level": "Intermediate",
+    "author": "AI Hub",
+    "duration": "20 Hours",
+    "rating": 4.8,
+    "students": "9K+",
+    "description": "Introduction to machine learning concepts, regression, classification, neural networks, and real-world AI projects.",
+    "tags": ["Machine Learning", "AI", "Python"],
+    "link": "https://developers.google.com/machine-learning/crash-course",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop"
+  },
+
+  {
+    "id": 6,
+    "title": "Flask Backend Development",
+    "category": "Web Development",
+    "type": "Tutorial",
+    "level": "Intermediate",
+    "author": "Backend Masters",
+    "duration": "10 Hours",
+    "rating": 4.6,
+    "students": "7K+",
+    "description": "Build scalable Flask applications with routing, APIs, authentication, database integration, and deployment.",
+    "tags": ["Flask", "Python", "Backend"],
+    "link": "https://flask.palletsprojects.com/",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop"
+  },
+
+  {
+    "id": 7,
+    "title": "React JS Complete Guide",
+    "category": "Web Development",
+    "type": "Course",
+    "level": "Intermediate",
+    "author": "Frontend Hub",
+    "duration": "25 Hours",
+    "rating": 4.9,
+    "students": "40K+",
+    "description": "Master React JS with hooks, routing, APIs, state management, reusable components, and modern frontend architecture.",
+    "tags": ["React", "Frontend", "JavaScript"],
+    "link": "https://react.dev/learn",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1200&auto=format&fit=crop"
+  },
+
+  {
+    "id": 8,
+    "title": "Interview Preparation Handbook",
+    "category": "Interview Prep",
+    "type": "PDF",
+    "level": "Advanced",
+    "author": "Career Boost",
+    "duration": "15 Days",
+    "rating": 4.8,
+    "students": "22K+",
+    "description": "Comprehensive guide for HR interviews, technical rounds, aptitude preparation, resume building, and communication skills.",
+    "tags": ["Interview", "Resume", "Career"],
+    "link": "https://www.geeksforgeeks.org/interview-preparation-for-software-developer/",
+    "image": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1200&auto=format&fit=crop"
+  },
+
+  {
+    "id": 9,
+    "title": "Cyber Security Basics",
+    "category": "Cyber Security",
+    "type": "Course",
+    "level": "Beginner",
+    "author": "Security Labs",
+    "duration": "14 Hours",
+    "rating": 4.7,
+    "students": "11K+",
+    "description": "Learn ethical hacking basics, networking, encryption, vulnerabilities, penetration testing, and security best practices.",
+    "tags": ["Cyber Security", "Networking", "Ethical Hacking"],
+    "link": "https://www.cisco.com/c/en_in/products/security/what-is-cybersecurity.html",
+    "image": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1200&auto=format&fit=crop"
+  },
+
+  {
+    "id": 10,
+    "title": "Java Programming Mastery",
+    "category": "Programming",
+    "type": "Course",
+    "level": "Beginner to Advanced",
+    "author": "Code Academy",
+    "duration": "30 Hours",
+    "rating": 4.8,
+    "students": "16K+",
+    "description": "Learn Java programming including OOP, collections, multithreading, JDBC, file handling, and advanced concepts.",
+    "tags": ["Java", "OOP", "Backend"],
+    "link": "https://www.w3schools.com/java/",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop"
+  }
+]
